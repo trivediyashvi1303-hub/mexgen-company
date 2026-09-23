@@ -1,0 +1,130 @@
+<!-- <table>	Defines a table
+<th>	Defines a header cell in a table
+<tr>	Defines a row in a table
+<td>	Defines a cell in a table
+<caption>	Defines a table caption
+<colgroup>	Specifies a group of one or more columns in a table for formatting
+<col>	Specifies column properties for each column within a <colgroup> element
+<thead>	Groups the header content in a table
+<tbody>	Groups the body content in a table
+<tfoot>	Groups the footer content in a table -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+
+        } */
+
+        table,
+         th ,
+          td{
+  border: 2px solid black;
+  border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <table>
+      <tr>
+        <th>Id</th>
+        <th>student name </th>
+        <th>Role No</th>
+        <th>Field</th>
+      </tr>
+      <tr>
+        <th rowspan="2">1</th>
+        <th>Yashvi</th>
+        <th>12</th>
+        <th>B.com</th>
+      </tr>
+      <tr>
+        <th>Tanvi</th>
+        <th>13</th>
+        <th>Bca</th>
+      </tr>
+    </table>
+ -->
+    <!-- <table>
+        <tr>
+          <th>Id</th>
+            <th colspan="2"> First Name</th>
+            <th>City</th>
+        </tr>
+         <tr>
+            <td>1</td>
+            <td>Tanvi</td>
+            <td>sagar</td>
+            <td>Ahmedabad</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>mohit</td>
+            <td>sagar</td>
+            <td>Surat</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Bhavik</td>
+            <td>Mohit</td>
+            <td>Mumbai</td>
+        </tr>
+    </table> -->
+
+     <table>
+      <caption>
+        Employees 2024-25
+      </caption>
+
+      <colgroup>
+        <col span="1" style="background-color: lightblue" />
+        <col span="1" style="background-color: lightcoral" />
+        <col span="1" style="background-color: lightpink" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Contact</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Tanvi</td>
+          <td>Ahmedabad</td>
+          <td>7894561230</td>
+        </tr>
+        <tr>
+          <td>Admin</td>
+          <td>Gandhinagar</td>
+          <td>1234568790</td>
+        </tr>
+        <tr>
+          <td>SuperAdmin</td>
+          <td>Ahmedabad</td>
+          <td>7894561230</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <td colspan="3">Employees Record 2024-2025</td>
+      </tfoot>
+    </table>
+
+
+    
+</body>
+
+</html>
