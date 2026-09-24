@@ -1,0 +1,179 @@
+<!-- An HTML form is used to collect user input. The user input is most often sent to a server for processing. -->
+
+<!-- The <form> Element -->
+
+<!-- The HTML <form> element is used to create an HTML form for user input:
+    The <form> element is a container for different types of input elements, such as: text fields, checkboxes, radio
+        buttons, submit buttons, etc.
+<input>
+<label>
+<select>
+<textarea>
+<button>
+<fieldset>
+<legend>
+<datalist>
+<output>
+<option> 
+<optgroup>
+ -->
+
+<!-- The <input> Element -->
+
+<!-- The HTML <input> element is the most used form element.
+An <input> element can be displayed in many ways, depending on the type attribute. 
+
+input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
+
+-->
+
+<!-- <input type="text">	Displays a single-line text input field
+<input type="radio">	Displays a radio button (for selecting one of many choices)
+<input type="checkbox">	Displays a checkbox (for selecting zero or more of many choices)
+<input type="submit">	Displays a submit button (for submitting the form)
+<input type="button">	Displays a clickable button -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <form>
+        <fieldset>
+            <legend>Form Work</legend>
+
+            <label for="username">FullName : </label>
+            <input type="text" placeholder="eg. Yashvi" required id="username" disabled />
+            <br /><br />
+
+            <label>Email : </label>
+            <input type="email" /> <br /><br />
+
+            <label>Password : </label>
+            <input type="password" maxlength="12" /> <br /><br />
+
+            <label>DOB : </label>
+            <input type="date" /> <br /><br />
+
+            <label>Time : </label>
+            <input type="time" /> <br /><br />
+
+            <label>Date-Time : </label>
+            <input type="datetime-local" /> <br /><br />
+
+            <label>Month : </label>
+            <input type="month" /> <br /><br />
+
+            <label>Week : </label>
+            <input type="week" /> <br /><br />
+
+            <!-- TASK : Select only one gender at a time. -->
+
+            <label>Gender : </label>
+            <label for="Male">Male : </label>
+            <input type="radio" name="Gender" />
+            <label for="female">Female : </label>
+            <input type="radio" name="Gender" /> <br /><br />
+
+            <label>Terms and conditions : </label>
+            <input type="checkbox" /> <br /><br />
+
+           <label>Select file : </label>
+            <input type="file" /> <br /><br />
+
+            <label>Search : </label>
+            <input type="search" /> <br /><br />
+
+            <label>Url : </label>
+            <input type="url" /> <br /><br />
+
+            <label>Pick colour : </label>
+            <input type="color" /> <br /><br />
+
+            <!-- TASK : Remove increment and decrement from the below input -->
+
+            <label>Number : </label>
+            <input type="number" /> <br /><br />
+
+            <label>Contact : </label>
+            <input type="tel" maxlength="10" /> <br /><br />
+            <select>
+                <option value="month" disabled selected>Month</option>
+                <option value="jan">Jan</option>
+                <option value="feb">Feb</option>
+                <option value="mar">Mar</option>
+                <option value="mar">apr</option>
+            </select>
+
+            <br /><br />
+
+            <!-- TASK : Fix the size of textarea -->
+
+            <textarea style="resize: none"></textarea>
+            <br /><br />
+
+            <input type="submit" />
+            <input type="reset" /> 
+
+            <!-- TASK : Select only image files(jpg, jpeg, png) -->
+
+            <!-- TASK : Fix the size of textarea -->
+        </fieldset>
+    </form>
+    
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- TASK : Select only image files(jpg, jpeg, png) -->
+
+            <!-- <label>Select file : </label>
+            <input type="file" accept=".jpg, .jpeg, .png" /> <br /><br /> -->
+
+
+
+            <!-- TASK : Fix the size of textarea -->
+<!-- 
+            <textarea style="resize: none" rows="10" cols="40"></textarea>
+            <br /><br /> -->
