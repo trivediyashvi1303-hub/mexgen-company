@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f4f6;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    width: 310px;
+    background-color: white;
+    border: 2px solid #2864ff;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+}
+
+.profile-icon {
+    width: 76px;
+    height: 76px;
+    background-color: #dbeafe;
+    border-radius: 50%;
+    margin: 0 auto 12px;
+    position: relative;
+}
+
+/* HEAD */
+.head {
+    width: 14px;
+    height: 14px;
+    border: 3px solid #2457ef;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 31px;
+}
+
+.body {
+    width: 23px;
+    height: 13px;
+    border: 3px solid #2457ef;
+    border-bottom: none;
+    border-radius: 15px 15px 0 0;
+    position: absolute;
+    top: 46px;
+    left: 26px;
+}
+
+h2 {
+    color: #1749e8;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 14px;
+}
+
+.job {
+    font-size: 16px;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.description {
+    font-size: 14px;
+    color: #626262;
+    line-height: 21px;
+    margin-bottom: 8px;
+}
+
+button {
+    background-color: #2864ed;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    padding: 12px 17px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+
+    <main>
+        <header>
+            <div class="profile-icon">
+                <div class="head"></div>
+                <div class="body"></div>
+            </div>
+
+            <h2>Tanvi Tank</h2>
+        </header>
+
+        <p class="job">MERN Stack Developer</p>
+
+        <p class="description">
+            I love building responsive websites using
+            HTML, CSS, React, and JavaScript.
+        </p>
+
+        <button>Contact Me</button>
+    </main>
+
+</body>
+</html>

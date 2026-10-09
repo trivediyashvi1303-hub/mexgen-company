@@ -1,0 +1,80 @@
+<!-- px:- Fixed size
+% :- Percentage of containing block
+vw :- Percentage of viewport width
+vh :- Percentage of viewport height
+auto :- Browser calculates the size
+min-width / min-height :- Minimum allowed size
+max-width / max-height :- Maximum allowed size -->
+
+<!-- Viewport width (vw) and viewport height (vh)
+
+ - The viewport is the visible area of your browser window.
+
+ 100vw = 100% of the viewport width.
+
+ 50vw = 50% of the viewport width.
+
+ 100vh = 100% of the viewport height.
+
+ 50vh = 50% of the viewport height. -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: rgb(238, 247, 216);
+    }
+    div {
+      margin: 20px;
+    }
+    .box {
+      width: 200px;
+      height: 100px;
+      background-color: lightblue;
+    }
+
+    .parent {
+      width: 400px;
+      height: 200px;
+      background-color: lightgray;
+    }
+
+    .child {
+      width: 50%;
+      height: 50%;
+      background-color: lightgreen;
+    }
+
+    .banner {
+      width: 100vw;
+      height: 50vh;
+      background-color: orange;
+    }
+    .box1 {
+      width: auto;
+      height: auto;
+      background-color: lightpink;
+      padding: 20px;
+    }
+  </style>
+  <body>
+    <div class="box">200px × 100px</div>
+
+    <div class="parent">
+      <div class="child">50% × 50%</div>
+    </div>
+
+    <div class="banner">Full viewport width, half viewport height</div>
+
+    <div class="box1">This box uses automatic width and height.</div>
+  </body>
+</html>
