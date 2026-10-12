@@ -1,0 +1,35 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: lightgray;
+    
+}
+
+caption {
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+}
+th {
+    background-color: lightgreen;
+    color: black;
+}
+td{
+    background-color: red;
+}
