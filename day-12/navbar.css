@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    display: inline-block;
+    padding: 15px 25px;
+    color: white;
+}
+
+.navbar {
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 50px;
+    margin: 20px;
+        background-color: rgb(204, 0, 255);
+}
