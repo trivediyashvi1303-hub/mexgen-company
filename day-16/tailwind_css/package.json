@@ -1,0 +1,25 @@
+{
+  "name": "mexgen-class",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trivediyashvi1303-hub/mexgen-company.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/trivediyashvi1303-hub/mexgen-company/issues"
+  },
+  "homepage": "https://github.com/trivediyashvi1303-hub/mexgen-company#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}
