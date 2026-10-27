@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Root</title>
+    <style>
+      /* pseudo-class */
+      :root {
+        --primary-colour: #123abc;
+        --font-primary-colour: #ffffff;
+        --heading-bg-colour: #123456;
+        --para-font-family: monospace;
+        --text-shadow: 2px 2px 2px white;
+      }
+
+      h1 {
+        background-color: var(--primary-colour);
+        color: var(--font-primary-colour);
+        /* color: #ffffff; */
+        font-family: var(--para-font-family);
+        text-shadow: var(--text-shadow);
+      }
+      p {
+        background-color: var(--primary-colour);
+        font-family: var(--para-font-family);
+        color: var(--font-primary-colour);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello Css</h1>
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
+      obcaecati facere, ipsa quibusdam illum numquam laborum aliquam maiores
+      inventore, earum iste accusantium sequi suscipit animi ex, nesciunt
+      placeat fugiat debitis magni tempore nostrum qui deserunt sapiente. Ipsa
+      fugit eligendi id autem iste temporibus ex, aut ipsum incidunt natus
+      adipisci doloribus!
+    </p>
+  </body>
+</html>

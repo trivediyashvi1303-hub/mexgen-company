@@ -1,0 +1,270 @@
+<!-- transform — changes an element's position, size, rotation, or shape.
+
+transition — makes a change happen smoothly when a CSS property changes.
+
+animation — makes an element move or change styles through defined steps using @keyframes.
+
+
+Transitions
+Transitions enable you to define the transition between two states of an element.
+
+to add some animation to elements
+
+timing function is how the transition should be applied
+
+show hover
+
+transition-property : property you want to transition (font-size, width etc.)
+
+transition-duration : 2s / 4ms ..
+
+transition-timing-function : ease-in / ease-out / linear / steps ..
+
+transition-delay : 2s / 4ms ..
+
+
+property name | duration | timing-function | delay
+transition: font-size 2s ease-in-out 0.2s;
+
+
+
+CSS Transform
+
+
+
+Animation
+
+@keyframe myName {
+from { font-size : 20px; }
+to { font-size : 40px; }
+}
+To animate CSS elements
+
+
+Animation Properties
+
+animation-name
+
+animation-duration
+
+animation-timing-function
+
+animation-delay
+
+animation-iteration-count
+
+animation-direction
+
+
+animation : myName 2s linear 3s infinite normal
+
+% in Animation
+
+@keyframe myName {
+0% { font-size : 20px; }
+50% { font-size : 30px; }
+100% { font-size : 40px; }
+} -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background: blue;
+        transition: 2s;
+        margin-bottom: 20px;
+      }
+
+      .box:hover {
+        /* transform: scale(1.2); */
+        /* transform: skewy(20deg); */
+        /* transform: rotate(180deg); */
+        /* transform: translatey(-100px); */
+        transform: scale(1.2) rotate(90deg);
+      }
+
+      .trasition {
+        height: 100px;
+        width: 100px;
+        background-color: blueviolet;
+        transition: width 2s;
+      }
+      .trasition:hover {
+        width: 150px;
+        height: 150px;
+        background-color: orange;
+      }
+      .progress {
+        width: 0;
+        height: 20px;
+        background: green;
+        animation: load 3s forwards;
+      }
+
+      @keyframes load {
+        to {
+          width: 50%;
+        }
+      }
+
+      .move-box {
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: absolute;
+        animation: move 8s infinite alternate;
+      }
+
+      @keyframes move {
+        from {
+          left: 0;
+        }
+
+        to {
+          left: 900px;
+        }
+      }
+      .ball {
+        width: 40px;
+        height: 40px;
+        background: purple;
+        border-radius: 50%;
+        position: absolute;
+        top: 20%;
+        animation: bounce 1s infinite;
+      }
+
+      @keyframes bounce {
+        0% {
+          transform: translatex(0);
+        }
+
+        50% {
+          transform: translatex(100px);
+        }
+
+        100% {
+          transform: translatex(0);
+        }
+      }
+
+      .fade {
+        animation: fade 5s;
+        font-size: 50px;
+        font-weight: 800;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+      .pulse {
+        width: 100px;
+        height: 100px;
+        background: crimson;
+        border-radius: 50%;
+        animation: pulse 1s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+
+        50% {
+          transform: scale(1.2);
+        }
+
+        100% {
+          transform: scale(1);
+        }
+      }
+      .slide {
+        position: relative;
+        animation: slide 2s;
+      }
+
+      @keyframes slide {
+        from {
+          right: -900px;
+        }
+
+        to {
+          right: 0;
+        }
+      }
+      .color-box {
+        width: 150px;
+        height: 150px;
+        animation: colorChange 3s infinite;
+      }
+
+      @keyframes colorChange {
+        0% {
+          background: red;
+        }
+
+        50% {
+          background: blue;
+        }
+
+        100% {
+          background: green;
+        }
+      }
+      .typing {
+        width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 1px solid black;
+        animation: typing 1s steps(20) infinite;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+
+        to {
+          width: 300px;
+        }
+      }
+      .card {
+        width: 200px;
+        padding: 20px;
+        background: white;
+
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        transform: translatey(10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="trasition"></div> -->
+    <!-- <div class="box"></div> -->
+    <!-- <div class="progress"></div> -->
+    <!-- <div class="move-box"></div> -->
+    <!-- <div class="ball"></div> -->
+    <!-- <div class="fade">fade</div> -->
+    <!-- <div class="pulse"></div> -->
+    <!-- <h1 class="slide">slide animation</h1> -->
+    <!-- <div class="color-box"></div> -->
+    <!-- <h1 class="typing">Frontend Developer</h1> -->
+    <div class="card">Card</div>
+  </body>
+</html>
